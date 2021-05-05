@@ -72,9 +72,11 @@ font-family: helvetica;
 .cities {
   position: absolute;
 text-align: center;
-  font-family: john-doe, sans-serif;
+font-family: typeka, sans-serif;
 
-font-weight: 700;
+font-weight: 500;
+
+font-style: normal;
 font-size: 20px;
 font-style: normal;
 }
@@ -83,7 +85,18 @@ font-style: normal;
   display: none;
 }
 
+#mobile {
+  position: absolute;
+  text-align: center;
+  top: 35%;
+font-family: interstate, sans-serif;
 
+font-weight: 400;
+
+font-style: normal;
+font-size: 15px;
+padding: 10%;
+}
 
 @media only screen and (min-width: 800px) {
 
@@ -175,19 +188,49 @@ font-family: helvetica;
   text-align: center;
   top: 15%;
   font-size: 20px;
+font-family: interstate, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
   display: none;
 }
 
 .cities {
   position: absolute;
 text-align: center;
-  font-family: john-doe, sans-serif;
+font-family: typeka, sans-serif;
 
-font-weight: 700;
-font-size: 50px;
+font-weight: 500;
+
+font-style: normal;
+font-size: 55px;
 font-style: normal;
 }
+#mobile {
+  display: none;
+}
+/*button {
+  display: block;
+  z-index: 100;
+}*/
 
+/*#button {
+  z-index: 20;
+  position: fixed;
+  left: 46%;
+  top: 85%;
+  font-size: 20px;
+  font-family: interstate, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+  color: white;
+  background: none;
+  border: none;
+  display: none;
+}*/
 }
 
 

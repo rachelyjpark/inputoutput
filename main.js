@@ -53,7 +53,7 @@ let cities = {
     'f': {
     'cityName': 'Foshan, China',
     'video': 'video/foshan.mp4',
-       'song': 'song/beach.mp3',
+       'song': 'song/time.mp3',
   },
     'g': {
     'cityName': 'Guatemala City, Guatemala',
@@ -161,6 +161,7 @@ let song = document.querySelector('song');
 let videoSource = document.querySelector('source');
 let cityDisplay = document.querySelector('#cityname');
 
+
 function keyEvent(event) {
   let key = event.key.toLowerCase();
   console.log(key);
@@ -179,18 +180,41 @@ function keyEvent(event) {
     document.querySelector('#cursor').style.display = "block";
     document.querySelector('#cursor').style.top = '20%';
     document.querySelector('#new').style.display = "block";
+     document.querySelector('#button').style.display = "block";
   } else {
+
     cityDisplay.innerText = "";
     document.querySelector('#cursor').style.display = "block";
     document.querySelector('#cursor').style.top = '45%';
      document.querySelector('#cursor').style.textAlign = 'center';
      document.querySelector('#new').style.display = "none";
-    videoSource.src = "video/earthvideo.mp4";
+    videoSource.src = "earthvideo.mp4";
     video.load();
     video.play();
+   const audio = document.querySelector('audio');
+  audio.src = city.song;
+  // count = 0;
+  audio.pause();
 
   } 
 }
 
 document.addEventListener('keyup', keyEvent);
+
+// var x = document.getElementById("myAudio"); 
+
+// function playAudio() { 
+//   x.play(); 
+// } 
+
+// function pauseAudio() { 
+//   x.pause(); 
+// } 
+
+
+// button.addEventListener('click', function (event) {
+
+//   video.style.filter = 'sepia(0.8)';
+
+// });
 
