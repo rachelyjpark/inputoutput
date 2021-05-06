@@ -220,7 +220,7 @@ display: block;
 }*/
 
 #invert {
-  z-index: 20;
+  z-index: 100;
   position: fixed;
   left: 30%;
   top: 85%;
@@ -235,7 +235,7 @@ font-style: normal;
   border: none;
 }
 #none {
-  z-index: 20;
+  z-index: 100;
   position: fixed;
   text-align: center;
   top: 85%;
@@ -250,7 +250,7 @@ font-style: normal;
   border: none;
 }
 #warm {
-  z-index: 20;
+  z-index: 100;
   position: fixed;
   left:65%;
   top: 85%;
