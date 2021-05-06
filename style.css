@@ -90,7 +90,7 @@ display: none;
 #mobile {
   position: absolute;
   text-align: center;
-  top: 35%;
+  top: 45%;
 font-family: interstate, sans-serif;
 
 font-weight: 400;
@@ -219,10 +219,10 @@ display: block;
   z-index: 100;
 }*/
 
-/*#button {
+#invert {
   z-index: 20;
   position: fixed;
-  left: 46%;
+  left: 30%;
   top: 85%;
   font-size: 20px;
   font-family: interstate, sans-serif;
@@ -233,8 +233,38 @@ font-style: normal;
   color: white;
   background: none;
   border: none;
-  display: none;
-}*/
+}
+#none {
+  z-index: 20;
+  position: fixed;
+  text-align: center;
+  top: 85%;
+  font-size: 20px;
+  font-family: interstate, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+  color: white;
+  background: none;
+  border: none;
+}
+#warm {
+  z-index: 20;
+  position: fixed;
+  left:65%;
+  top: 85%;
+  font-size: 20px;
+  font-family: interstate, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+  color: white;
+  background: none;
+  border: none;
+}
+
 }
 
 

@@ -33,17 +33,17 @@ let cities = {
   'b': {
     'cityName': 'Boston, Massachusetts',
     'video': 'video/boston.mp4',
-     'song': 'song/wildestdream.mp3',
+     'song': 'song/krystal.mp3',
   },
    'c': {
     'cityName': 'Cairo, Egypt',
     'video': 'video/cairo.mp4',
-     'song': 'song/wildestdream.mp3',
+     'song': 'song/paul.mp3',
   },
     'd': {
     'cityName': 'Dubai, United Arab Emirates',
     'video': 'video/dubai.mp4',
-      'song': 'song/taba.mp3',
+    'song': 'song/beach.mp3',
   },
     'e': {
     'cityName': 'Edinburgh, United Kingdom',
@@ -58,7 +58,7 @@ let cities = {
     'g': {
     'cityName': 'Guatemala City, Guatemala',
     'video': 'video/guatemala.mp4',
-     'song': 'song/september.mp3',
+     'song': 'song/countrya.mp3',
   },
     'h': {
     'cityName': 'Hamburg, Germany',
@@ -73,7 +73,7 @@ let cities = {
     'j': {
     'cityName': 'Jakarta, Indonesia',
     'video': 'video/jakarta.mp4',
-      'song': 'song/jacob.mp3',
+      'song': 'song/grandma.mp3',
   },
     'k': {
     'cityName': 'Kyoto, Japan',
@@ -83,7 +83,7 @@ let cities = {
     'l': {
     'cityName': 'London, United Kingdom',
     'video': 'video/london.mp4',
-    'song': 'song/losretros.mp3',
+    'song': 'song/reflection.mp3',
   },
       'm': {
     'cityName': 'Madrid, Spain',
@@ -98,7 +98,7 @@ let cities = {
       'o': {
     'cityName': 'Osaka, Japan',
     'video': 'video/osaka.mp4',
-     'song': 'song/harvest.mp3',
+     'song': 'song/memento.mp3',
   },
       'p': {
     'cityName': 'Paris, France',
@@ -124,7 +124,7 @@ let cities = {
       't': {
     'cityName': 'Taipei, Taiwan',
     'video': 'video/taiwan.mp4',
-      'song': 'song/taba.mp3',
+      'song': 'song/shame.mp3',
   },    'u': {
     'cityName': 'Urla, Turkey',
     'video': 'video/turkey.mp4',
@@ -180,7 +180,7 @@ function keyEvent(event) {
     document.querySelector('#cursor').style.display = "block";
     document.querySelector('#cursor').style.top = '20%';
     document.querySelector('#new').style.display = "block";
-     document.querySelector('#button').style.display = "block";
+ h
   } else {
 
     cityDisplay.innerText = "";
@@ -212,9 +212,20 @@ document.addEventListener('keyup', keyEvent);
 // } 
 
 
-// button.addEventListener('click', function (event) {
+invert.addEventListener('click', function (event) {
 
-//   video.style.filter = 'sepia(0.8)';
+  video.style.filter = 'invert(80%)';
 
-// });
+});
 
+none.addEventListener('click', function (event) {
+
+  video.style.filter = 'none';
+
+});
+
+warm.addEventListener('click', function (event) {
+
+  video.style.filter = 'sepia(80%)';
+
+});
